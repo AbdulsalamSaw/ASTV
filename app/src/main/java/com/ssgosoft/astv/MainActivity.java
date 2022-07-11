@@ -30,7 +30,11 @@ public class MainActivity extends AppCompatActivity {
    }
 
     public void pageQuran(View view) {
+
         Intent intent = new Intent(this, MediaPlayerViewModel.class);
+        Bundle bundle = new Bundle();
+        bundle.putString("url","https://shls-mbc5-prod-dub.shahid.net/out/v1/2720564b6a4641658fdfb6884b160da2/index.m3u8");
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 }
