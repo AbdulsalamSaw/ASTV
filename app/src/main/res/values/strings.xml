@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ASTV</string>
+    <string name="channel">Channel</string>
+    <string name="movies">Movies</string>
+    <string name="sections">Sections</string>
+    <string name="quran">Quran</string>
 </resources>
