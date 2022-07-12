@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void pageChannel(View view) {
-        Intent intent = new Intent(this, ChannelViewModel.class);
+            Intent intent = new Intent(this, ChannelViewModel.class);
         startActivity(intent);
     }
 
