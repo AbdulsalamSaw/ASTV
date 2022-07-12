@@ -1,9 +1,17 @@
 package com.ssgosoft.astv.ViewModel;
+import static com.google.android.material.internal.ContextUtils.getActivity;
+
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.net.Uri;
+import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import com.google.android.material.tabs.TabLayout;
 import com.ssgosoft.astv.R;
 import java.net.URL;
 
@@ -24,6 +32,8 @@ public class MediaPlayerViewModel  extends AppCompatActivity {
         }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activite_player);
+        ActionBar actionBar=getSupportActionBar();
+        actionBar.hide();
         myVideoView = (VideoView)this.findViewById(R.id.myVideoView);
         MediaController mc = new MediaController(this);
         myVideoView.setMediaController(mc);
