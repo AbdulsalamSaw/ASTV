@@ -29,6 +29,7 @@ public class ChannelViewModel extends AppCompatActivity {
             ListView listView = findViewById(R.id.list_channel);
             ArrayList<ChannelModel> item = new ArrayList<ChannelModel>();
             item.add(new ChannelModel("Roya TV","https://weyyak-live.akamaized.net/weyyak_roya/index.m3u8"));
+            item.add(new ChannelModel("Jordan","https://jrtv-live.ercdn.net/jordanhd/jordanhd.m3u8"));
             item.add(new ChannelModel("الفاتحة" ,"https://server7.mp3quran.net/basit/Almusshaf-Al-Mojawwad/001.mp3"));
             AdapterViewModel channelAdpaterViewModel = new AdapterViewModel(getApplicationContext(),item);
             listView.setAdapter(channelAdpaterViewModel);

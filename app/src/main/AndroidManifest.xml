@@ -25,7 +25,9 @@
         <activity
             android:name=".ViewModel.ChannelViewModel"
             android:exported="false" />
-
+        <activity
+            android:name=".ViewModel.MovieViewModel"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true" >
