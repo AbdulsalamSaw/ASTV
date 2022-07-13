@@ -8,17 +8,18 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.ssgosoft.astv.Model.ChannelModel;
+import com.ssgosoft.astv.Model.MovieModel;
 import com.ssgosoft.astv.R;
 
 import java.util.ArrayList;
 
-public class AdapterViewModel extends BaseAdapter {
+public class MovieAdapterViewModel extends BaseAdapter {
 
     Context context;
     LayoutInflater inflater;
-    ArrayList<ChannelModel> item = new ArrayList<ChannelModel>();
+    ArrayList<MovieModel> item = new ArrayList<MovieModel>();
 
-    public AdapterViewModel(Context context,ArrayList<ChannelModel>item)
+    public MovieAdapterViewModel(Context context,ArrayList<MovieModel>item)
     {
         this.context = context;
         inflater = LayoutInflater.from(context);
@@ -35,7 +36,7 @@ public class AdapterViewModel extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return item.get(position).getNameChannel();
+        return item.get(position).getNameMovie();
     }
 
     @Override
@@ -47,7 +48,7 @@ public class AdapterViewModel extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         convertView = inflater.inflate(R.layout.activity_row,null);
         TextView textView = (TextView) convertView.findViewById(R.id.text1);
-        textView.setText(item.get(position).getNameChannel());
+        textView.setText(item.get(position).getNameMovie());
         return convertView;
 
 
